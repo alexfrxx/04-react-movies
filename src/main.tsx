@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import 'modern-normalize';
-import './index.module.css';
+import './index.css';
 import App from './components/App.tsx';
 
 const queryClient = new QueryClient();
