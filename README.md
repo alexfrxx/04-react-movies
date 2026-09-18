@@ -6,7 +6,11 @@ The application allows users to search for movies, browse results with paginatio
 
 <img src='./public/preview.png' width="100%">
 
-## 🚀 Features
+## Live Demo
+
+<a href="https://movix-search-app.vercel.app" target="_blank">
+
+## Features
 
 - 🔎 Search for movies using the TMDB database
 - 🎬 Browse popular and trending movies
@@ -21,7 +25,7 @@ The application allows users to search for movies, browse results with paginatio
 - ⏳ Loading and error states
 - 🔔 User notifications for search and API-related events
 
-## 🛠️ Technologies
+## Tech stack
 
 - **React**
 - **TypeScript**
