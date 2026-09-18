@@ -83,15 +83,6 @@ Movie data is provided by **The Movie Database (TMDB) API**.
 
 The application communicates with the API through Axios and uses React Query to manage fetching, caching, loading, and error states.
 
-## 🔮 Future Improvements
-
-- Add dedicated movie detail pages with React Router
-- Add advanced filtering and sorting
-- Add movie genres
-- Improve accessibility
-- Add automated tests
-- Add favorites/watchlist functionality
-
 ## 📌 Project Status
 
 The project is actively being improved as part of my ongoing **React and TypeScript learning journey**.
