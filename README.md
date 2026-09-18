@@ -8,7 +8,7 @@ The application allows users to search for movies, browse results with paginatio
 
 ## Live Demo
 
-<a href="https://movix-search-app.vercel.app" target="_blank">
+<a href="https://movix-search-app.vercel.app" target="_blank">https://movix-search-app.vercel.app</a>
 
 ## Features
 
