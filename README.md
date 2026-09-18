@@ -1,75 +1,101 @@
-# React + TypeScript + Vite
+# 🎬 Movix Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern movie search web application built with **React and TypeScript**, using the **TMDB API** to search and discover movies.
 
-Currently, two official plugins are available:
+The application allows users to search for movies, browse results with pagination, explore trending and upcoming movies, and view detailed movie information through a responsive and user-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<img src='./public/preview.png' width="100%">
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔎 Search for movies using the TMDB database
+- 🎬 Browse popular and trending movies
+- 🍿 Explore upcoming movies
+- 📄 Pagination for search results
+- ⚡ Asynchronous API requests with **Axios**
+- 🔄 Server-state management with **TanStack React Query**
+- 🪝 React Hooks — `useState`, `useEffect`, and `useQuery`
+- 🎞️ Interactive movie carousel using **Swiper**
+- 📱 Responsive design for different screen sizes
+- 🎨 Scoped styling with **CSS Modules**
+- ⏳ Loading and error states
+- 🔔 User notifications for search and API-related events
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**
+- **TypeScript**
+- **Vite**
+- **TanStack React Query**
+- **Axios**
+- **Swiper**
+- **CSS Modules**
+- **TMDB API**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧠 What I Practiced
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project helped me practice working with:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React functional components
+- React Hooks and component state
+- Asynchronous API requests
+- REST APIs
+- Server-state management with React Query
+- Query caching and pagination
+- TypeScript interfaces and type safety
+- Component composition and reusable UI
+- Responsive layouts
+- CSS Modules
+- Third-party library integration
 
+## 📂 Project Structure
+
+The project is organized into reusable components, assets, services, and types to keep the codebase maintainable and easy to extend.
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── AppBody/
+│   ├── ComingSoon/
+│   ├── Container/
+│   ├── ErrorMessage/
+│   ├── Footer/
+│   ├── Hero/
+│   ├── Loader/
+│   ├── Modal/
+│   ├── MovieGrid/
+│   ├── Pagination/
+│   ├── SearchBar/
+│   ├── TrendingMovieGrid/
+│   └── App.tsx
+├── services/
+│   └── movieService.ts
+├── types/
+│   └── note.ts
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 📡 API
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Movie data is provided by **The Movie Database (TMDB) API**.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The application communicates with the API through Axios and uses React Query to manage fetching, caching, loading, and error states.
 
-```
+## 🔮 Future Improvements
+
+- Add dedicated movie detail pages with React Router
+- Add advanced filtering and sorting
+- Add movie genres
+- Improve accessibility
+- Add automated tests
+- Add favorites/watchlist functionality
+
+## 📌 Project Status
+
+The project is actively being improved as part of my ongoing **React and TypeScript learning journey**.
+
+---
+
+Built with ❤️ using **React, TypeScript and TMDB API**.
