@@ -13,17 +13,18 @@
 
 .modal {
   position: relative;
-  width: 70vw;
+  width: 75vw;
   display: flex;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .image {
-  width: 400px;
+  width: 450px;
   height: auto;
   object-fit: cover;
   display: block;
+  border-radius: 10px 0 0 10px;
 }
 
 .content {
@@ -33,6 +34,7 @@
   overflow-y: auto;
   max-height: 50%;
   display: flex;
+  border-radius: 0 10px 10px 0;
   flex-direction: column;
   gap: 10px;
 }
@@ -52,27 +54,39 @@
 
 .closeButton {
   position: absolute;
+  outline: none;
   top: 8px;
   right: 8px;
-  background: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   border: none;
   border-radius: 4px;
   width: 40px;
   height: 40px;
   font-size: 24px;
-  font-weight: bold;
-  color: #333;
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0;
+  align-items: center;
 }
 
-.closeButton:hover {
-  background: rgba(255, 255, 255, 1);
+.closeButton::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  transform: rotate(45deg);
 }
 
-.closeButton:focus {
-  outline: 2px solid #007bff;
+.closeButton::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  transform: rotate(-45deg);
 }

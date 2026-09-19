@@ -41,9 +41,7 @@ export default function MovieModal({ movie, onClose }: MovieModalProps) {
           className={css.closeButton}
           aria-label="Close modal"
           onClick={onClose}
-        >
-          &times;
-        </button>
+        ></button>
         <img
           src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
           alt={movie.title}
