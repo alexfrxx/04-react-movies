@@ -3,6 +3,7 @@ import Container from '../Container/Container';
 import SupportList from './SupportList/SupportList';
 import DownloadList from './DownloadList/DownloadList';
 import FooterLogo from './FooterLogo/FooterLogo';
+import Copyright from './Copyright/Copyright';
 
 const aboutLinks = ['FAQ', 'Blog', 'Support', 'Contact us'];
 const contactLinks = ['Discord', 'FaceBook', 'Linkedin', 'X(Twitter)'];
@@ -25,6 +26,7 @@ export default function Footer() {
             <DownloadList />
           </li>
         </ul>
+        <Copyright />
       </Container>
     </footer>
   );
